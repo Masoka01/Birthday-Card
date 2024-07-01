@@ -172,16 +172,25 @@ p {
   visibility: hidden;
 }
 
-.fireworks {
+/* .fireworks {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  background-image: url("img/Fireworks.gif"); /* Ganti dengan URL gambar kembang api Anda */
+  background-image: url("img/Fireworks.gif"); 
   background-size: cover;
-  /* animation: fireworks 2s forwards infinite alternate; */
+} */
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Agar video berada di belakang konten */
 }
 
 @keyframes blink {
